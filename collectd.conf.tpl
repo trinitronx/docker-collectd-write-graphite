@@ -55,7 +55,7 @@ LoadPlugin match_regex
 </Plugin>
 
 <Plugin "disk">
-  Disk "/^[hs]d[a-z]/"
+  Disk "/^(([hs]|xv)d[a-z][a-z]?[0-9]*|nvme[0-9]+n1|mapper\/.*|dm-[0-9]+)$/"
   IgnoreSelected false
 </Plugin>
 
